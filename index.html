@@ -1,0 +1,270 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ورشة رفيق | Rafiq Workshop - Makkah</title>
+<meta name="description" content="ورشة رفيق في حي المشاعر بمكة المكرمة لصيانة السيارات. Rafiq Workshop in Al Mashair, Makkah: car repair, oil change, brakes, AC, denting and painting.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "ورشة رفيق",
+  "alternateName": "Rafiq Workshop",
+  "telephone": "+966500104594",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "6569 3342 Road 18, Al Mashair",
+    "addressLocality": "Makkah",
+    "postalCode": "24251",
+    "addressCountry": "SA"
+  },
+  "openingHours": "Sa-Th 08:00-22:00"
+}
+</script>
+<style>
+:root{
+  --ink:#14283C; --steel:#5B6B7A; --bg:#EEF1F4; --card:#FFFFFF;
+  --accent:#F2A900; --accent-ink:#2A1F00; --line:#D3DAE1;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',system-ui,'Segoe UI',Tahoma,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8;font-size:17px}
+h1,h2,h3{line-height:1.3;font-weight:900}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+header{background:var(--ink);color:#fff;position:sticky;top:0;z-index:10}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{font-weight:900;font-size:24px;text-decoration:none}
+.right{display:flex;align-items:center;gap:24px}
+nav{display:flex;gap:24px}
+nav a{text-decoration:none;font-weight:500;opacity:.85}
+nav a:hover{opacity:1;text-decoration:underline}
+#langBtn{background:transparent;border:2px solid var(--accent);color:var(--accent);padding:4px 16px;border-radius:6px;font-family:inherit;font-weight:700;font-size:16px;cursor:pointer}
+#langBtn:hover{background:var(--accent);color:var(--accent-ink)}
+
+.btn{display:inline-block;padding:12px 26px;border-radius:6px;font-weight:700;text-decoration:none;border:2px solid transparent;font-family:inherit}
+.btn-main{background:var(--accent);color:var(--accent-ink)}
+.btn-main:hover{background:#ffbd1f}
+.btn-alt{border-color:#fff;color:#fff}
+.btn-alt:hover{background:rgba(255,255,255,.12)}
+
+.hero{background:var(--ink);color:#fff;padding:72px 0 84px;border-bottom:8px solid var(--accent)}
+.hero h1{font-size:clamp(36px,7vw,64px);max-width:16ch}
+.hero p{max-width:48ch;margin:20px 0 32px;font-size:19px;opacity:.9}
+.hero .btns{display:flex;gap:14px;flex-wrap:wrap}
+
+section{padding:64px 0}
+section h2{font-size:clamp(28px,5vw,40px);margin-bottom:8px}
+.lead{color:var(--steel);margin-bottom:32px;max-width:55ch}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.service{background:var(--card);border-inline-start:6px solid var(--accent);padding:22px;border-radius:4px}
+.service h3{font-size:21px;margin-bottom:6px}
+.service p{color:var(--steel);font-size:16px}
+.price{display:block;margin-top:10px;font-weight:700}
+
+.about{background:var(--card)}
+.points{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-top:8px}
+.points h3{font-size:20px;margin-bottom:4px}
+.points p{color:var(--steel);font-size:16px}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.contact dl{display:grid;gap:14px}
+.contact dt{font-weight:500;color:var(--steel);font-size:15px}
+.contact dd{font-size:18px}
+.map iframe{width:100%;height:100%;min-height:300px;border:0;border-radius:6px;background:var(--line)}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.row .btn-alt{border-color:var(--ink);color:var(--ink)}
+.row .btn-alt:hover{background:rgba(20,40,60,.08)}
+
+footer{background:var(--ink);color:#fff;text-align:center;padding:24px 0;font-size:15px}
+
+@media (max-width:720px){
+  nav{display:none}
+  .contact-grid{grid-template-columns:1fr}
+  .hero{padding:48px 0 56px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" data-i18n="logo"></a>
+    <div class="right">
+      <nav>
+        <a href="#services" data-i18n="nav_services"></a>
+        <a href="#about" data-i18n="nav_about"></a>
+        <a href="#contact" data-i18n="nav_contact"></a>
+      </nav>
+      <button id="langBtn" type="button" aria-label="Change language">English</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1 data-i18n="hero_h1"></h1>
+      <p data-i18n="hero_p"></p>
+      <div class="btns">
+        <a class="btn btn-main" data-wa="1" href="#" target="_blank" rel="noopener" data-i18n="wa_quote"></a>
+        <a class="btn btn-alt" href="tel:+966500104594" data-i18n="call"></a>
+      </div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2 data-i18n="services_h"></h2>
+      <p class="lead" data-i18n="services_lead"></p>
+      <div class="services">
+        <div class="service"><h3 data-i18n="s1_t"></h3><p data-i18n="s1_d"></p><span class="price" data-i18n="s1_p"></span></div>
+        <div class="service"><h3 data-i18n="s2_t"></h3><p data-i18n="s2_d"></p><span class="price" data-i18n="s2_p"></span></div>
+        <div class="service"><h3 data-i18n="s3_t"></h3><p data-i18n="s3_d"></p><span class="price" data-i18n="s3_p"></span></div>
+        <div class="service"><h3 data-i18n="s4_t"></h3><p data-i18n="s4_d"></p><span class="price" data-i18n="s4_p"></span></div>
+        <div class="service"><h3 data-i18n="s5_t"></h3><p data-i18n="s5_d"></p><span class="price" data-i18n="s5_p"></span></div>
+        <div class="service"><h3 data-i18n="s6_t"></h3><p data-i18n="s6_d"></p><span class="price" data-i18n="s6_p"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <h2 data-i18n="about_h"></h2>
+      <div class="points">
+        <div><h3 data-i18n="a1_t"></h3><p data-i18n="a1_d"></p></div>
+        <div><h3 data-i18n="a2_t"></h3><p data-i18n="a2_d"></p></div>
+        <div><h3 data-i18n="a3_t"></h3><p data-i18n="a3_d"></p></div>
+        <div><h3 data-i18n="a4_t"></h3><p data-i18n="a4_d"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2 data-i18n="contact_h"></h2>
+      <p class="lead" data-i18n="contact_lead"></p>
+      <div class="contact-grid">
+        <div>
+          <dl>
+            <div><dt data-i18n="addr_l"></dt><dd data-i18n="addr_v"></dd></div>
+            <div><dt data-i18n="phone_l"></dt><dd><a href="tel:+966500104594" dir="ltr">050 010 4594</a></dd></div>
+            <div><dt data-i18n="hours_l"></dt><dd data-i18n="hours_v"></dd></div>
+          </dl>
+          <div class="row">
+            <a class="btn btn-main" data-wa="1" href="#" target="_blank" rel="noopener" data-i18n="wa_btn"></a>
+            <a class="btn btn-alt" href="tel:+966500104594" data-i18n="call"></a>
+          </div>
+        </div>
+        <div class="map">
+          <iframe id="mapFrame" loading="lazy" src="https://www.google.com/maps?q=6569+3342+Road+18,+Al+Mashair,+Makkah+24251,+Saudi+Arabia&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" data-i18n="footer"></div>
+</footer>
+
+<script>
+/* All website text is here. Edit the text inside the quotes. ar = Arabic, en = English */
+var T = {
+  ar: {
+    logo: "ورشة رفيق",
+    nav_services: "خدماتنا", nav_about: "لماذا نحن", nav_contact: "تواصل معنا",
+    hero_h1: "سيارتك تُصلَح بإتقان من أول مرة",
+    hero_p: "صيانة المحرك والفرامل والتكييف والسمكرة في حي المشاعر بمكة المكرمة. نخبرك بالتكلفة قبل أن نبدأ العمل.",
+    wa_quote: "اطلب عرض سعر عبر واتساب", call: "اتصل الآن",
+    wa_msg: "مرحبا، أريد عرض سعر لصيانة سيارتي",
+    services_h: "خدماتنا",
+    services_lead: "الأسعار المذكورة هي أسعار البداية، والتكلفة النهائية تعتمد على نوع السيارة وقطع الغيار.",
+    s1_t: "تغيير الزيت", s1_d: "تغيير زيت المحرك والفلتر مع فحص مجاني من 10 نقاط.", s1_p: "ابتداءً من 100 ريال",
+    s2_t: "صيانة المحرك", s2_d: "فحص بالكمبيوتر وضبط المحرك وإصلاح أعطال الإنارة والاهتزاز.", s2_p: "ابتداءً من 200 ريال",
+    s3_t: "الفرامل", s3_d: "تغيير تيل وأقراص الفرامل وزيت الفرامل. الفحص مجاني.", s3_p: "ابتداءً من 120 ريال",
+    s4_t: "تكييف السيارة", s4_d: "تعبئة الفريون وإصلاح التسريب وصيانة الكمبريسور.", s4_p: "ابتداءً من 150 ريال",
+    s5_t: "السمكرة والدهان", s5_d: "إصلاح الخدوش والبعجات ودهان كامل مع مطابقة اللون.", s5_p: "تقدير مجاني",
+    s6_t: "الصيانة الدورية", s6_d: "باقة صيانة شاملة مع تقرير مكتوب بحالة السيارة.", s6_p: "ابتداءً من 400 ريال",
+    about_h: "لماذا يعود إلينا عملاؤنا",
+    a1_t: "السعر قبل العمل", a1_d: "تحصل على التكلفة مكتوبة قبل أن نبدأ أي إصلاح.",
+    a2_t: "نعيد لك القطع القديمة", a2_d: "نريك كل قطعة نستبدلها ونسلمها لك.",
+    a3_t: "فنيون ذوو خبرة", a3_d: "أكثر من 10 سنوات في صيانة السيارات اليابانية والكورية والأمريكية.",
+    a4_t: "تسليم في نفس اليوم", a4_d: "معظم الخدمات تنتهي في نفس اليوم.",
+    contact_h: "زورونا أو تواصلوا معنا",
+    contact_lead: "تفضّلوا بزيارتنا أو اتصلوا أو راسلونا على واتساب.",
+    addr_l: "العنوان", addr_v: "6569 3342 طريق 18، المشاعر، مكة المكرمة 24251، المملكة العربية السعودية",
+    phone_l: "الهاتف", hours_l: "ساعات العمل",
+    hours_v: "من السبت إلى الخميس، 8:00 صباحًا حتى 10:00 مساءً",
+    wa_btn: "راسلنا على واتساب",
+    map_title: "موقع الورشة على خرائط جوجل",
+    footer: "© 2026 ورشة رفيق. جميع الحقوق محفوظة.",
+    btn: "English", title: "ورشة رفيق | صيانة وإصلاح السيارات في مكة المكرمة"
+  },
+  en: {
+    logo: "Rafiq Workshop",
+    nav_services: "Services", nav_about: "Why us", nav_contact: "Contact",
+    hero_h1: "Your car, fixed right the first time",
+    hero_p: "Engine, brakes, AC and body work in Al Mashair, Makkah. We tell you the cost before we start.",
+    wa_quote: "Get a quote on WhatsApp", call: "Call now",
+    wa_msg: "Hello, I need a car service quote",
+    services_h: "Services",
+    services_lead: "Prices are starting rates. Final cost depends on your car and parts.",
+    s1_t: "Oil change", s1_d: "Engine oil and filter change with a free 10-point check.", s1_p: "From SAR 100",
+    s2_t: "Engine repair", s2_d: "Computer scan, tuning, and fixes for warning lights and rough running.", s2_p: "From SAR 200",
+    s3_t: "Brakes", s3_d: "Brake pads, discs and brake fluid. Inspection is free.", s3_p: "From SAR 120",
+    s4_t: "Car AC", s4_d: "Gas refill, leak repair and compressor service.", s4_p: "From SAR 150",
+    s5_t: "Denting and painting", s5_d: "Scratch and dent repair, and full paint with colour matching.", s5_p: "Free estimate",
+    s6_t: "Full service", s6_d: "Complete service package with a written report on your car.", s6_p: "From SAR 400",
+    about_h: "Why customers come back",
+    a1_t: "Price first", a1_d: "You get the cost in writing before any work starts.",
+    a2_t: "Old parts returned", a2_d: "We show you every part we replace and hand it back.",
+    a3_t: "Experienced mechanics", a3_d: "Over 10 years of work on Japanese, Korean and American cars.",
+    a4_t: "Same-day delivery", a4_d: "Most services are finished the same day.",
+    contact_h: "Visit or contact us",
+    contact_lead: "Walk in, call, or message us on WhatsApp.",
+    addr_l: "Address", addr_v: "6569 3342 Road 18, Al Mashair, Makkah 24251, Saudi Arabia",
+    phone_l: "Phone", hours_l: "Hours",
+    hours_v: "Saturday to Thursday, 8:00 am to 10:00 pm",
+    wa_btn: "WhatsApp us",
+    map_title: "Workshop location on Google Maps",
+    footer: "© 2026 Rafiq Workshop. All rights reserved.",
+    btn: "العربية", title: "Rafiq Workshop | Car Repair & Service in Makkah"
+  }
+};
+
+var PHONE = "966500104594"; /* WhatsApp number: 966 + number without the first 0 */
+
+function setLang(l){
+  var d = T[l];
+  document.documentElement.lang = l;
+  document.documentElement.dir = (l === "ar") ? "rtl" : "ltr";
+  document.querySelectorAll("[data-i18n]").forEach(function(el){
+    el.textContent = d[el.getAttribute("data-i18n")];
+  });
+  document.querySelectorAll("[data-wa]").forEach(function(el){
+    el.href = "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(d.wa_msg);
+  });
+  document.getElementById("langBtn").textContent = d.btn;
+  document.getElementById("mapFrame").title = d.map_title;
+  document.title = d.title;
+  try { localStorage.setItem("lang", l); } catch(e) {}
+}
+
+document.getElementById("langBtn").addEventListener("click", function(){
+  setLang(document.documentElement.lang === "ar" ? "en" : "ar");
+});
+
+var saved = "ar";
+try { saved = localStorage.getItem("lang") || "ar"; } catch(e) {}
+setLang(saved === "en" ? "en" : "ar");
+</script>
+
+</body>
+</html>`
